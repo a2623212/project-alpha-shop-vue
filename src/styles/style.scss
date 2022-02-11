@@ -1,0 +1,17 @@
+// reset css
+@import "./reset.scss";
+
+// import common style
+@import "./main.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./layout.scss";
+@import "./size.scss";
+
+// components style
+@import "./stepper.scss";
+@import "./checkout.scss";
+@import "./form.scss";
+@import "./shoppingcart.scss";
+@import "./button.scss";
+@import "./notfound.scss";
