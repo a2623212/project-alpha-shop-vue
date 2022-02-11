@@ -20,10 +20,6 @@ export default {
 };
 </script>
 <style>
-#alpha-shop {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-}
 main {
   margin-top: 10px;
   margin-bottom: 10px;
