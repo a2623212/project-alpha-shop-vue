@@ -1,0 +1,17 @@
+@import "./variables.scss";
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $white;
+  color: $main-color;
+  font-family: "Noto Sans TC";
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
