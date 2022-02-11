@@ -5,7 +5,11 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "./../styles/color.scss";
+h1 {
+  color: $mainColor;
+}
 .img {
   margin: 0 auto;
   width: 500px;
