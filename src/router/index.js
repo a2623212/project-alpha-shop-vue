@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import NotFound from "../views/NotFound.vue";
 import CheckOut from "../views/CheckOut.vue";
+import FromInfo from "../components/FormInfo.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,23 @@ const routes = [
     path: "/checkout",
     name: "check-out",
     component: CheckOut,
+    children: [
+      {
+        path: "info",
+        name: "1",
+        component: FromInfo,
+      },
+      {
+        path: "delivery",
+        name: "2",
+        component: () => import("../components/FormDelivery.vue"),
+      },
+      {
+        path: "payment",
+        name: "3",
+        component: () => import("../components/FormPayment.vue"),
+      },
+    ],
   },
   {
     path: "*",
