@@ -21,7 +21,7 @@ export default {
 </script>
 <style>
 main {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 50px;
 }
 </style>

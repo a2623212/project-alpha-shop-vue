@@ -1,8 +1,8 @@
 <template>
-  <div class="form-part d-none">
+  <div class="form-part">
     <h4>運送方式</h4>
     <div class="form-part__delivery">
-      <div class="form-part__delivery__type">
+      <div class="form-part__delivery__type checked">
         <input name="delivery" id="s-delivery" type="radio" value="0" />
         <label for="s-delivery">
           <span class="delivery-type d-block">標準運送</span>
