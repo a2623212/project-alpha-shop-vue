@@ -1,3 +1,7 @@
 <template>
-  <h1>Alphla Shop</h1>
+  <div>
+    <div id="navbar">
+      <h2 id="title">Alphla Shop</h2>
+    </div>
+  </div>
 </template>
