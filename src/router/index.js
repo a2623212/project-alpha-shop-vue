@@ -10,7 +10,7 @@ const routes = [
   {
     path: "/",
     name: "root",
-    redirect: "/checkout",
+    redirect: "/checkout/1",
   },
   {
     path: "/checkout",
@@ -18,17 +18,17 @@ const routes = [
     component: CheckOut,
     children: [
       {
-        path: "info",
+        path: "1",
         name: "1",
         component: FormInfo,
       },
       {
-        path: "delivery",
+        path: "2",
         name: "2",
         component: () => import("../components/FormDelivery.vue"),
       },
       {
-        path: "payment",
+        path: "3",
         name: "3",
         component: () => import("../components/FormPayment.vue"),
       },
