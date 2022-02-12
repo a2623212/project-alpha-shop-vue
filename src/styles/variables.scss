@@ -1,7 +1,37 @@
-$main-color: #2a2a2a;
 $white: #ffffff;
-$black: #000000;
-$light-gray: #4a4a4a;
-$stepper-gray: #afb1bd;
-$border-gray: #f0f0f5;
-$label-title: #808080;
+$black: #333333;
+$pink: #f67599;
+
+$bgColor: $white;
+$mainColor: #2a2a2a;
+$stepperMain: $black;
+$stepperSecond: #afb1bd;
+$cartSecond: #f0f0f5;
+$formMain: #808080;
+$formSecond: #999999;
+$formThird: #4a4a4a;
+$navMain: $white;
+$footerMain: #5e5e5e;
+$footerSecond: #808080;
+
+// .dark-theme {
+//   --bg-color: #121212;
+//   --white: $white;
+//   --font-color: $white;
+//   --black: $black;
+//   --neutrals-grey: #afb1bd;
+//   --neutrals-black: $white;
+//   --pale-grey: #5e5e5e;
+//   --border-grey: rgba(255, 255, 255, 0.2);
+//   --pink: #f67599;
+//   --footer: $black;
+//   --footer-grey: #808080;
+//   --input-border-grey: #5e5e5e;
+//   --placeholder-grey: #999999;
+//   --radio-color: $black;
+//   --cart-container: #383838;
+//   --delivery-time: rgba(255, 255, 255, 0.4);
+//   --radio-background: $black;
+//   --radio-check: $black;
+//   --radio-check-background: $white;
+// }

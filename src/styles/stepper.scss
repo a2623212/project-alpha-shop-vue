@@ -1,0 +1,85 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+#step-control {
+  height: 2rem;
+  .stepper-container {
+    @include flex(row, space-between, center);
+    .step {
+      position: relative;
+      @include flex(row, center, center);
+      text-align: center;
+      @include getStepNums(3);
+      .circle-container {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        line-height: 24px;
+        border: 1px solid $stepperSecond;
+        border-radius: 50%;
+        color: $stepperSecond;
+        font-weight: 700;
+      }
+      .circle--2 {
+        align-self: center;
+        &::before {
+          content: " ";
+          width: 60px;
+          height: 2px;
+          background-color: $black;
+          position: absolute;
+          top: 12px;
+          left: -140px;
+        }
+      }
+
+      .circle--3 {
+        align-self: flex-end;
+        &::before {
+          content: " ";
+          width: 60px;
+          height: 2px;
+          background-color: $black;
+          position: absolute;
+          top: 12px;
+          left: -140px;
+        }
+      }
+      .label-container {
+        margin-left: 0.5rem;
+        color: $stepperSecond;
+      }
+
+      &.checked {
+        .circle-container {
+          background-color: $stepperMain;
+          color: $white;
+        }
+        .label-container {
+          color: $mainColor;
+        }
+      }
+
+      &.checked .circle-container::after {
+        content: "\2713";
+        font-size: 1rem;
+      }
+
+      &.active {
+        .circle-container {
+          border-color: $mainColor;
+          color: $mainColor;
+        }
+        .label-container {
+          color: $mainColor;
+        }
+      }
+    }
+    .step-center {
+      @include flex(row, center, center);
+    }
+    .step-right {
+      @include flex(row, flex-end, center);
+    }
+  }
+}

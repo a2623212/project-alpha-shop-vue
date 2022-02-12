@@ -1,0 +1,28 @@
+@import "./mixins.scss";
+
+#main-title {
+  font-size: 1.5rem;
+  color: $mainColor;
+}
+
+#main-content {
+  margin-top: 1rem;
+  @include grid(repeat(12, 1fr), auto);
+  grid-column-gap: 30px;
+  grid-template-areas:
+    " stepper stepper stepper stepper stepper stepper  . cart  cart cart cart cart "
+    " form form form form form form . cart  cart cart cart cart "
+    "controlBtn controlBtn controlBtn controlBtn controlBtn controlBtn . cart cart cart cart cart";
+  #stepper {
+    grid-area: stepper;
+  }
+  #form {
+    grid-area: form;
+  }
+  #shopping-cart {
+    grid-area: cart;
+  }
+  #btn-control {
+    grid-area: controlBtn;
+  }
+}

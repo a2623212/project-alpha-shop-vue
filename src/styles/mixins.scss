@@ -5,3 +5,26 @@
     }
   }
 }
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin grid($columns, $row) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-columns: $row;
+}
+
+@mixin gridItemColumn($start, $end) {
+  grid-column-start: $start;
+  grid-column-end: $end;
+}
+
+@mixin gridItemRow($start, $end) {
+  grid-row-start: $start;
+  grid-row-end: $end;
+}
