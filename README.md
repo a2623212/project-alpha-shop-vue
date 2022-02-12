@@ -1,4 +1,4 @@
-# project-alpha-shop-vue
+# Project Alpha Shop 2.0
 
 ## Project setup
 ```
