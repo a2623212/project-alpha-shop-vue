@@ -29,7 +29,8 @@
           background-color: $black;
           position: absolute;
           top: 12px;
-          left: -140px;
+          left: -150%;
+          transform: translate(50%, 0);
         }
       }
 
@@ -42,7 +43,8 @@
           background-color: $black;
           position: absolute;
           top: 12px;
-          left: -140px;
+          left: -150%;
+          transform: translate(50%, 0);
         }
       }
       .label-container {

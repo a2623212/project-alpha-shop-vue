@@ -16,7 +16,7 @@
 @mixin grid($columns, $row) {
   display: grid;
   grid-template-columns: $columns;
-  grid-template-columns: $row;
+  grid-template-rows: $row;
 }
 
 @mixin gridItemColumn($start, $end) {
