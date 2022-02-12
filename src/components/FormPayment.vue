@@ -9,6 +9,7 @@
           class="form-control"
           name="credit-name"
           id="credit-name"
+          v-model="name"
           placeholder="John Done"
           required
         />
@@ -19,6 +20,7 @@
           type="tel"
           name="credit-number"
           id="credit-number"
+          v-model="cardNo"
           placeholder="1111 2222 3333 4444"
           pattern="[0-9\s]{13,19}"
           maxlength="19"
@@ -31,6 +33,7 @@
             type="tel"
             name="credit-expire"
             id="credit-expire"
+            v-model="expire"
             placeholder="MM/YY"
             pattern="[0-9\s]{13,19}"
             maxlength="5"
@@ -42,6 +45,7 @@
             type="tel"
             name="credit-cvc"
             id="credit-cvc"
+            v-model="cvc"
             placeholder="123"
             pattern="[0-9\s]{13,19}"
             maxlength="3"
@@ -51,3 +55,16 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: "FormPayment",
+  data() {
+    return {
+      name: "",
+      cardNo: "",
+      expire: "",
+      cvc: "",
+    };
+  },
+};
+</script>

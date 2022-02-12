@@ -5,7 +5,7 @@
       <div class="form-row">
         <div class="form-group select-wrapper form-group-title">
           <label for="title">稱謂</label>
-          <select name="title" id="title">
+          <select name="title" id="title" v-model="title">
             <option value="1">先生</option>
             <option value="2">小姐</option>
           </select>
@@ -17,6 +17,7 @@
             class="form-control"
             name="name"
             id="name"
+            v-model="name"
             placeholder="請輸入姓名"
             required
           />
@@ -30,6 +31,7 @@
             class="form-control"
             name="phone"
             id="phone"
+            v-model="tel"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             placeholder="請輸入行動電話"
             required
@@ -42,6 +44,7 @@
             class="form-control"
             name="email"
             id="email"
+            v-model="email"
             placeholder="請輸入電子郵件"
           />
         </div>
@@ -54,6 +57,7 @@
             class="form-control"
             name="city"
             id="city"
+            v-model="city"
           />
           <datalist id="city-of-taiwan">
             <datalist id="city-of-taiwan">
@@ -86,6 +90,7 @@
             class="form-control"
             name="address"
             id="address"
+            v-model="address"
             placeholder="請輸入地址 "
             required
           />
@@ -94,3 +99,19 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "FormInfo",
+  data() {
+    return {
+      name: "",
+      title: "",
+      tel: "",
+      email: "",
+      city: "",
+      address: "",
+    };
+  },
+};
+</script>
