@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import NotFound from "../views/NotFound.vue";
 import CheckOut from "../views/CheckOut.vue";
-import FromInfo from "../components/FormInfo.vue";
+import FormInfo from "../components/FormInfo.vue";
 
 Vue.use(VueRouter);
 
@@ -20,7 +20,7 @@ const routes = [
       {
         path: "info",
         name: "1",
-        component: FromInfo,
+        component: FormInfo,
       },
       {
         path: "delivery",
