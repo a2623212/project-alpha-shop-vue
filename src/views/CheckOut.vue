@@ -2,30 +2,30 @@
   <main class="container">
     <h2 id="main-title">結帳</h2>
     <div id="main-content">
-      <section class="stepper">
+      <section id="stepper">
         <Stepper />
       </section>
-      <section class="form">
+      <section id="form">
         <div id="main-content__form">
           <div id="main-content__form__form-panel">
-            <form></form>
+            <form>
+              <router-view />
+            </form>
           </div>
         </div>
       </section>
-      <section class="shopping-cart">
+      <section id="shopping-cart">
         <Shopping-cart />
       </section>
-
-      <div id="btn-control">
-        <button
-          id="btn-previous"
-          class="btn-previous arrow-previous btn-d-none"
-        >
-          上一步
-        </button>
-        <button id="btn-next" class="btn-next arrow-next">下一步</button>
-        <button id="btn-done" class="btn-done btn-d-none">確認下單</button>
-      </div>
+      <section id="btn-control">
+        <div>
+          <button id="btn-previous" class="btn-previous arrow-previous">
+            上一步
+          </button>
+          <button id="btn-next" class="btn-next arrow-next">下一步</button>
+          <button id="btn-done" class="btn-done btn-d-none">確認下單</button>
+        </div>
+      </section>
     </div>
   </main>
 </template>
